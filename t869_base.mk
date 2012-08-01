@@ -15,7 +15,7 @@
 
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/smdk4210-tab/smdk4210-tab_base.mk)
 $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/smdk4210-tab_base.mk)
 $(call inherit-product-if-exists, vendor/samsung/t869/t869_base.mk)
@@ -28,6 +28,5 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=160
 
-# GSM
-PRODUCT_COPY_FILES += \
-	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+PRODUCT_PACKAGES += \
+    Mms
