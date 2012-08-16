@@ -27,9 +27,3 @@ PRODUCT_LOCALES += mdpi
 
 PRODUCT_PACKAGES += \
     Mms
-
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/lib/libsec-ril.so \
-    rild.libargs=-d /dev/ttyS0 \
-    ro.telephony.ril_class=Smdk4210RIL
