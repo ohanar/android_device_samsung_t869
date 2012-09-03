@@ -21,4 +21,5 @@ $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/vendor.mk)
 $(call inherit-product-if-exists, vendor/samsung/t869/vendor.mk)
 
 PRODUCT_PACKAGES += \
-    Mms
+    Mms \
+    SamsungServiceMode
